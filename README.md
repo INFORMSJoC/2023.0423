@@ -3,7 +3,30 @@
 # A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow
 This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The purpose of this repository is to share the codes, instances, and results used in the paper ["A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow"] authored by Daniel B. Lopes da Silva, Thomas C. Sharkey and Yongjia Song
+The purpose of this repository is to share the codes, instances, and results used in the paper ["A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow"] authored by Daniel B. Lopes da Silva, Thomas C. Sharkey and Yongjia Song.
+
+
+## Cite
+
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
+
+https://doi.org/10.1287/ijoc.2019.0000
+
+https://doi.org/10.1287/ijoc.2019.0000.cd
+
+Below is the BibTex for citing this snapshot of the repository.
+
+```
+@misc{CacheTest,
+  author =        {D. B. Lopes da Silva, T. C. Sharkey, and Y. Song},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow},
+  year =          {2025},
+  doi =           {},
+  url =           {https://github.com/INFORMSJoC/2023.0423},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0423},
+}  
+```
 
 ## Dataset 
 The "data" folder contains all the datasets used in the paper, separated by type of network according to the computational experiments described in the paper, which includes ten "Type1" networks, ten "Type2" networks, and 10 "HT" (Human Trafficking) networks. MFNIP method uses "Modified Networks" (same topology as the original networks, but special arcs have a capacity of 1 and the remaining arcs have 
