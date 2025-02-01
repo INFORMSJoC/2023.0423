@@ -1,0 +1,31 @@
+Instance: Modified_Net5, budget 9 
+Instance executed at: Thu Oct  5 15:20:01 2023 
+
+Number of Nodes: 22 
+Number of Arcs: 58 
+Number of special arcs: 15
+Level of special set: 2 
+Budget: 9
+
+Status: Optimal
+Number of special arcs without flow: 12 
+Number of special arcs with flow: 3 
+Max-Flow (Original Network): 38 
+run time: 0.02 sec 
+Level 0 Capacities: 10000 
+
+ 
+Interdiction plan: 
+Level 1:
+arc (2,7), gamma = 1 
+arc (4,7), gamma = 1 
+Level 2: 
+arc (8,11), gamma = 1 
+arc (9,11), gamma = 1 
+arc (10,12), gamma = 1 
+
+Special arcs with flow (original net) : 
+Arc (8,12), Flow: 13.000000 
+Arc (8,13), Flow: 12.000000 
+Arc (9,15), Flow: 13.000000 
+
