@@ -1,0 +1,49 @@
+
+Gurobi 10.0.1 (linux64) logging started Sat Oct  7 06:45:33 2023
+
+Set parameter LogFile to value "LogFile_Net5_b3.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 40 logical processors, using up to 32 threads
+
+Optimize a model with 252 rows, 437 columns and 797 nonzeros
+Model fingerprint: 0xc78336ab
+Model has 1 quadratic constraint
+Variable types: 372 continuous, 65 integer (65 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+04]
+  QMatrix range    [1e+00, 1e+03]
+  QLMatrix range   [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start 0 produced solution with objective 8 (0.00s)
+Loaded user MIP start 0 with objective 8
+User MIP start 1 did not produce a new incumbent solution
+
+Presolve removed 72 rows and 191 columns
+Presolve time: 0.00s
+Presolved: 289 rows, 408 columns, 1031 nonzeros
+Presolved model has 108 SOS constraint(s)
+Variable types: 299 continuous, 109 integer (108 binary)
+
+Root relaxation: objective 7.000000e+00, 126 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    9    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    9    8.00000    7.00000  12.5%     -    0s
+     0     2    7.00000    0    9    8.00000    7.00000  12.5%     -    0s
+H  531    90                       7.9999938    7.00000  12.5%   9.1    0s
+H 2379   216                       7.9997984    7.00000  12.5%   8.6    0s
+
+Explored 23657 nodes (174519 simplex iterations) in 0.44 seconds (0.26 work units)
+Thread count was 32 (of 40 available processors)
+
+Solution count 3: 7.9998 7.99999 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.999999999987e+00, best bound 7.999999999987e+00, gap 0.0000%
