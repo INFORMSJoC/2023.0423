@@ -1,0 +1,57 @@
+
+Gurobi 10.0.1 (linux64) logging started Tue Aug 20 00:29:07 2024
+
+Set parameter LogFile to value "LogFile_NoWarmStartNet10_b3.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 40 logical processors, using up to 32 threads
+
+Optimize a model with 297 rows, 514 columns and 965 nonzeros
+Model fingerprint: 0xe5702c38
+Model has 1 quadratic constraint
+Variable types: 438 continuous, 76 integer (76 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+04]
+  QMatrix range    [1e+00, 1e+03]
+  QLMatrix range   [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 46 rows and 181 columns
+Presolve time: 0.01s
+Presolved: 382 rows, 528 columns, 1361 nonzeros
+Presolved model has 130 SOS constraint(s)
+Variable types: 397 continuous, 131 integer (130 binary)
+
+Root relaxation: objective 1.600000e+01, 292 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   16.00000    0   18          -   16.00000      -     -    0s
+H    0     0                      21.0000000   16.00000  23.8%     -    0s
+     0     0   16.00000    0   18   21.00000   16.00000  23.8%     -    0s
+     0     2   16.00000    0   18   21.00000   16.00000  23.8%     -    1s
+*  143    54              10      17.0000000   16.00000  5.88%  19.4    1s
+H  157    54                      16.9999925   16.00000  5.88%  19.2    1s
+H  838   126                      16.9999891   16.00000  5.88%  26.3    2s
+H  898   126                      16.9998317   16.00000  5.88%  27.0    2s
+  5387   169   16.00000   29   11   16.99983   16.00000  5.88%  26.2    8s
+  7989   146     cutoff   37        16.99983   16.00000  5.88%  25.6   10s
+ 17159   218     cutoff   32        16.99983   16.00000  5.88%  24.0   15s
+ 24864   292   16.00000   35    0   16.99983   16.00000  5.88%  23.0   20s
+ 31161   251   16.00000   44    2   16.99983   16.00000  5.88%  21.4   25s
+ 44369   365     cutoff   36        16.99983   16.00000  5.88%  19.1   30s
+ 57811   322   16.00000   41    9   16.99983   16.00000  5.88%  17.5   35s
+ 81543   506     cutoff   50        16.99983   16.00000  5.88%  15.9   40s
+ 93083   291     cutoff   61        16.99983   16.00000  5.88%  15.4   45s
+ 118391   277   16.00000   63    3   16.99983   16.00000  5.88%  14.7   50s
+
+Explored 137470 nodes (1937471 simplex iterations) in 52.73 seconds (2.36 work units)
+Thread count was 32 (of 40 available processors)
+
+Solution count 4: 16.9998 17 17 21 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.699999999987e+01, best bound 1.699999999987e+01, gap 0.0000%
