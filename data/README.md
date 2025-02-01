@@ -1,6 +1,6 @@
 # Data for replication
 
-There are two categories of networks used in our experiments HT (human trafficking) networks and layered networks. The layered networks are subdivided into two groups: Type 1 and Type 2.
+There are two categories of networks used in our experiments: HT (human trafficking) networks and layered networks. Layered networks are subdivided into two groups according to the location of the special arcs in the network: Type 1 and Type 2.
 
 # HT Networks
 These are synthetic but realistic domestic sex trafficking network generated according to the method from ``Kosmas et al. (2023), _A transdisciplinary approach for generating synthetic but realistic domestic sex trafficking networks_. IISE Transactions 56(3):1–15.'' In these network, the first row contains only two entries: the first indicates the source node and the second entry indicates the sink node. All the remaining rows denote arcs and their attributes, and have the following fields (in the following order):
