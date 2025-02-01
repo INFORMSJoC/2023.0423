@@ -5,7 +5,7 @@ There are two categories of networks used in our experiments: HT (human traffick
 # HT Networks
 These are synthetic but realistic domestic sex trafficking network generated according to the method from ``Kosmas et al. (2023), _A transdisciplinary approach for generating synthetic but realistic domestic sex trafficking networks_. IISE Transactions 56(3):1–15.'' In these network, the first row contains only two entries: the first indicates the source node and the second entry indicates the sink node. All the remaining rows denote arcs and their attributes, and have the following fields (in the following order):
 
-|tail node | head node | arc capacity | arc interdiction cost | Special arc indicator | Trafficker arc indicator | Bottom arc indicator | Victim arc indicator|
+| Tail node | Head node | Arc capacity | Arc interdiction cost | Special arc indicator | Trafficker arc indicator | Bottom arc indicator | Victim arc indicator |
 
  * Special arc indicator indicates whether the arc is a special arc (1) or not (0)
  * Trafficker arc indicator indicates whether the arc is a trafficker arc (1) or not (0)
@@ -14,7 +14,8 @@ These are synthetic but realistic domestic sex trafficking network generated acc
 
 # Layered networks
 Layered networks are created according to the procedure discussed in Section 6.2 of the paper. The first row of layered networks contains three entries: souce node, sink node, level in which the special arcs are located (1 for Type1 networks, 2 for Type2 networks). All the remaining rows denote arcs and their attributes, and have the following fields (in the following order):
-|tail node | head node | arc capacity | arc interdiction cost | Special arc indicator | Level indicator |
+
+| Tail node | Head node | Arc capacity | Arc interdiction cost | Special arc indicator | Level indicator |
 
  * Special arc indicator indicates whether the arc is a special arc (1) or not (0)
  * Level indicator indicates in which level the arc is located: 0, 1, 2, 3, 4, or 5 (where the only arc in level 5 is the returning, (s,t) arc.
