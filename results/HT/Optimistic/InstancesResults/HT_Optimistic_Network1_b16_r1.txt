@@ -1,0 +1,47 @@
+Instance: Network1, budget 16, rate 1 
+Instance executed on:	 Tue Oct 10 13:38:51 2023 
+
+Number of Nodes: 41
+Number of Traffickers: 5
+Number of Bottoms: 5
+Number of victims: 31
+Budget: 16
+
+Status: Optimal
+Number of special arcs without flow: 17 
+Number of special arcs with flow: 19 
+Max-Flow: 96 
+run time: 0.06 sec 
+
+Trafficker Capacity: 
+(0, 1) : 62 
+(0, 11) : 44 
+(0, 20) : 37 
+(0, 29) : 27 
+(0, 35) : 25 
+
+Interdiction plan: 
+Trafficker: 1, gamma = 1 
+Trafficker: 20, gamma = 1 
+
+Victim nodes with flow 
+victim: 12, 	 Flow: 7 
+victim: 13, 	 Flow: 5 
+victim: 14, 	 Flow: 4 
+victim: 15, 	 Flow: 6 
+victim: 16, 	 Flow: 1 
+victim: 17, 	 Flow: 1 
+victim: 18, 	 Flow: 10 
+victim: 19, 	 Flow: 10 
+victim: 30, 	 Flow: 9 
+victim: 31, 	 Flow: 1 
+victim: 32, 	 Flow: 6 
+victim: 33, 	 Flow: 3 
+victim: 34, 	 Flow: 8 
+victim: 36, 	 Flow: 2 
+victim: 37, 	 Flow: 2 
+victim: 38, 	 Flow: 5 
+victim: 39, 	 Flow: 5 
+victim: 41, 	 Flow: 6 
+victim: 40, 	 Flow: 5 
+
