@@ -1,0 +1,11 @@
+Instance executed at: Fri Aug 16 14:05:14 2024 
+
+Runtime: 5892.87 secs 
+Number of iterations: 6489 
+Upper Bound: 13
+Lower Bound: 13
+
+Interdiction:
+Arc: (3,9)
+Arc: (3,10)
+Arc: (4,9)
