@@ -1,0 +1,44 @@
+
+Gurobi 10.0.1 (linux64) logging started Fri Oct  6 19:52:45 2023
+
+Set parameter LogFile to value "LogFile_Net2_b0.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 40 logical processors, using up to 32 threads
+
+Optimize a model with 286 rows, 501 columns and 923 nonzeros
+Model fingerprint: 0x3683ea6d
+Model has 1 quadratic constraint
+Variable types: 432 continuous, 69 integer (69 binary)
+Coefficient statistics:
+  Matrix range     [6e-02, 1e+04]
+  QMatrix range    [1e+00, 1e+03]
+  QLMatrix range   [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start 0 produced solution with objective 17 (0.00s)
+Loaded user MIP start 0 with objective 17
+User MIP start 1 did not produce a new incumbent solution
+
+Presolve removed 178 rows and 332 columns
+Presolve time: 0.00s
+Presolved: 108 rows, 169 columns, 456 nonzeros
+Variable types: 169 continuous, 0 integer (0 binary)
+
+Root relaxation: cutoff, 116 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        17.00000   17.00000  0.00%     -    0s
+
+Explored 1 nodes (116 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 32 (of 40 available processors)
+
+Solution count 2: 17 17 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.699999999991e+01, best bound 1.699999999991e+01, gap 0.0000%
