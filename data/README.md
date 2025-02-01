@@ -7,6 +7,7 @@ These are synthetic but realistic domestic sex trafficking network generated acc
 
 | Tail node | Head node | Capacity | Interdiction cost | Special arc indicator | Trafficker arc indicator | Bottom arc indicator | Victim arc indicator |
 
+where:
  * Special arc indicator indicates whether the arc is a special arc (1) or not (0)
  * Trafficker arc indicator indicates whether the arc is a trafficker arc (1) or not (0)
  * Bottom arc indicator indicates whether the arc is a bottom arc (1) or not (0)
@@ -17,6 +18,7 @@ Layered networks are created according to the procedure discussed in Section 6.2
 
 | Tail node | Head node | Capacity | Interdiction cost | Special arc indicator | Level indicator |
 
+where:
  * Special arc indicator indicates whether the arc is a special arc (1) or not (0)
  * Level indicator indicates in which level the arc is located: 0, 1, 2, 3, 4, or 5 (where the only arc in level 5 is the returning, (s,t) arc.
 
