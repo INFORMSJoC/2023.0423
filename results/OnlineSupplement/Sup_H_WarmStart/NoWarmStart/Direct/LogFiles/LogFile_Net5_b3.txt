@@ -1,0 +1,50 @@
+
+Gurobi 10.0.1 (linux64) logging started Thu Aug 15 15:38:27 2024
+
+Set parameter LogFile to value "LogFile_Net5_b3.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 40 logical processors, using up to 32 threads
+
+Optimize a model with 96 rows, 627 columns and 418 nonzeros
+Model fingerprint: 0xb40b22dc
+Model has 59 quadratic constraints
+Variable types: 569 continuous, 58 integer (58 binary)
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+04]
+  QMatrix range    [3e+00, 1e+03]
+  QLMatrix range   [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 3e+00]
+Presolve removed 10 rows and 353 columns
+Presolve time: 0.01s
+Presolved: 322 rows, 556 columns, 1235 nonzeros
+Presolved model has 188 SOS constraint(s)
+Variable types: 415 continuous, 141 integer (141 binary)
+Found heuristic solution: objective 11.0033600
+
+Root relaxation: objective 0.000000e+00, 147 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   16   11.00336    0.00000   100%     -    0s
+H    0     0                      11.0000000    0.00000   100%     -    0s
+     0     0    0.00000    0   16   11.00000    0.00000   100%     -    0s
+     0     2    0.00000    0   16   11.00000    0.00000   100%     -    0s
+*    3     6               2       9.0000000    0.00000   100%  26.7    0s
+*   64    20               8       8.0000000    0.00000   100%  27.3    0s
+H  182    38                       7.9999980    0.00000   100%  26.6    1s
+H  187    38                       7.9999943    0.00000   100%  27.0    1s
+H  192    38                       7.9999907    0.00000   100%  26.9    1s
+
+Explored 4113 nodes (45918 simplex iterations) in 2.60 seconds (0.17 work units)
+Thread count was 32 (of 40 available processors)
+
+Solution count 4: 7.99999 9 11 11.0034 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max bound violation (6.0767e-06) exceeds tolerance
+Best objective 7.999990707757e+00, best bound 7.999990707757e+00, gap 0.0000%

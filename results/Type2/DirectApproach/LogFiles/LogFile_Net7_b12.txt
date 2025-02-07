@@ -1,0 +1,33 @@
+
+Gurobi 10.0.1 (linux64) logging started Sat Oct  7 04:31:54 2023
+
+Set parameter LogFile to value "LogFile_Net7_b12.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 40 logical processors, using up to 32 threads
+
+Optimize a model with 109 rows, 697 columns and 478 nonzeros
+Model fingerprint: 0xd5ca7dc9
+Model has 66 quadratic constraints
+Variable types: 632 continuous, 65 integer (65 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+04]
+  QMatrix range    [7e+00, 1e+03]
+  QLMatrix range   [1e+00, 1e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 1e+01]
+
+User MIP start 0 produced solution with objective 5 (0.01s)
+Loaded user MIP start 0 with objective 5
+User MIP start 1 did not produce a new incumbent solution
+
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds (0.02 work units)
+Thread count was 1 (of 40 available processors)
+
+Solution count 2: 5 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000006958e+00, gap 0.0000%

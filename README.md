@@ -1,20 +1,10 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow
+This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+The purpose of this repository is to share the codes, instances, and results used in the paper ["A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow"] authored by Daniel B. Lopes da Silva, Thomas C. Sharkey and Yongjia Song.
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
-
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
 
 ## Cite
 
@@ -28,80 +18,36 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @misc{CacheTest,
-  author =        {T. Ralphs},
+  author =        {D. B. Lopes da Silva, T. C. Sharkey, and Y. Song},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
+  title =         {A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow},
+  year =          {2025},
+  doi =           {},
+  url =           {https://github.com/INFORMSJoC/2023.0423},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0423},
 }  
 ```
 
-## Description
+## Dataset 
+The "data" folder contains all the datasets used in the paper, separated by type of network according to the computational experiments described in the paper, which includes ten "Type1" networks, ten "Type2" networks, and 10 "HT" (Human Trafficking) networks. MFNIP method uses "Modified Networks" (same topology as the original networks, but special arcs have a capacity of 1 and the remaining arcs have 
+an infinite capacity). Although the conversion from an original network to the corresponding "Modified Network" is straightforward, we also provide the corresponding "Modified Network" with respect to each of the original networks (Type1, Type2, and HT). All these networks are provided in CSV (comma separated values) format.
+Lastly, for the HT networks, we provide a visual representation in terms of the single trafficker operations in PDF format.
 
-The goal of this software is to demonstrate the effect of cache optimization.
 
-## Building
+## Results 
+The "results" folder contains all the results discussed in the paper including the results of the experiments discussed at the Online Supplement. 
+"Type1" and "Type2" folders include individual results from the experiments conducted with "Alternative", "Direct", "MFNIP_Method" and "Optimistic" as well as a folder ("stats") with the average running times. For the general pessimistic approaches 
+("Alternative" and "Direct"), we report the individual results files ("InstancesResults"), the logfiles, MIP warm start files with respect to optimistic solutions ("MST_Optimistic_Files"), MIP warm start files with respect to MFNIP solutions ("MST_MFNIP_Files"), and a summary file for each approach with respect to each type of network.
+For "HT" experiments, according to the paper, we report the results for "Optimistic" and "MFNIP_Method", as well as a "stats" folder with running time averages. These approaches do not use MIP warm start, so we do not generate "MST" files. Also, because both approaches solved each instance in less than a second, we do not report their logfiles.
+Folder "Online Supplement" contains the results from the experiments discussed on "Online Suplement B - Penalty-based Benders Decomposition Approach", "Online Suplement G - Size of Pessimistic Formulations and Initial Gap at the Root Node", and "Online Suplement H - Effects of MIP Warm Start". NOTE: all the information discussed in "Online Suplement F - Gap from Pessimistic Approaches on Layered Networks" can be obtained from the "Summary" files.  
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
 
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
-
-## Results
-
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
 
 ## Replicating
+The src folder contains the source code for all the experiments discussed in the paper. All the codes were implemented using Python through the "Jupyter Notebook" platform and therefore all the source codes are in the "ipynb" format. The conversion to pure "py" format can be easily carried out. 
 
-To replicate the results in [Figure 1](results/mult-test), do either
+For the approaches ("Optimistic" and "MFNIP_Method") that were used with both layered and HT networks, although the main part of the algorithms are equal, the output is slightly different, so we provide both versions (e.g., "Optimistic" for layered networks and "Optimistic" for HT networks). The "OnlineSupplement" folder contains the "Benders" approach and a version of both "Direct" and "Alternative" that does not use MIP Warm Start.
 
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+To run the codes and fully replicate the experiments, you will need a valid "Gurobi" license.
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
 
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
-
-## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).

@@ -1,0 +1,35 @@
+Instance: Net10, budget 0 
+Instance executed at: Sat Oct  7 10:50:34 2023 
+
+Number of Nodes: 22 
+Number of Arcs: 69 
+Number of Special Arcs: 14 
+Level of special set: 1 
+Budget: 0
+
+Status: Optimal
+Number of special arcs without flow: 0 
+Number of special arcs with flow: 14 
+Max-Flow: 275 
+run time: 0.12 sec 
+Level 0 Capacities: 1000 
+
+ 
+Interdiction plan: 
+
+Special arcs with flow : 
+Arc (1,7), Flow: 27.000000 
+Arc (1,10), Flow: 9.928571 
+Arc (2,7), Flow: 28.000000 
+Arc (2,9), Flow: 24.000000 
+Arc (2,10), Flow: 24.000000 
+Arc (3,6), Flow: 25.000000 
+Arc (3,7), Flow: 3.000000 
+Arc (3,9), Flow: 19.000000 
+Arc (3,10), Flow: 22.000000 
+Arc (4,6), Flow: 28.000000 
+Arc (4,8), Flow: 24.000000 
+Arc (5,6), Flow: 21.000000 
+Arc (5,7), Flow: 20.000000 
+Arc (5,10), Flow: 0.071429 
+
