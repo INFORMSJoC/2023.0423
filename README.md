@@ -10,20 +10,19 @@ The purpose of this repository is to share the codes, instances, and results use
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2023.0423 
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2023.0423.cd
 
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{CacheTest,
+@misc{INFORMSJoC_2023.0423,
   author =        {D. B. Lopes da Silva, T. C. Sharkey, and Y. Song},
   publisher =     {INFORMS Journal on Computing},
   title =         {A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow},
-  year =          {2025},
-  doi =           {},
-  url =           {https://github.com/INFORMSJoC/2023.0423},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2023.0423.cd},
   note =          {Available for download at https://github.com/INFORMSJoC/2023.0423},
 }  
 ```
