@@ -21,7 +21,7 @@ Below is the BibTex for citing this snapshot of the repository.
   author =        {D. B. Lopes da Silva, T. C. Sharkey, and Y. Song},
   publisher =     {INFORMS Journal on Computing},
   title =         {A Bi-level Network Interdiction Problem to Minimize the Number of Active Special Arcs in the Maximum Flow},
-  year =          {2023},
+  year =          {2025},
   doi =           {10.1287/ijoc.2023.0423.cd},
   note =          {Available for download at https://github.com/INFORMSJoC/2023.0423},
 }  
